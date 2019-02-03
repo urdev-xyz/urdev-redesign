@@ -7,7 +7,7 @@
 }
 
 .App {
-
+  font-family: var(--main);
 }
 .Content {
   position: absolute;

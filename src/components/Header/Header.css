@@ -18,9 +18,13 @@
     max-width: 350px;
     color: var(--purple);
 }
+.Header-text h1 {
+    font-weight: 900;
+}
 .Header-image {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 .Header-image img::selection {

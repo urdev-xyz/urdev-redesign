@@ -4,17 +4,33 @@
     z-index: 10;
     width: 100%;
     height: 60px;
-
-    box-shadow: 0 1px 5px rgba(0,0,0,.46);
     background: white;
-    text-align: left;
-    padding: 0 15px; 
+    color: var(--purple);
 
+    text-align: left;
 }
 .Navbar-inner {
     width: 100%;
     height: 100%;
+    padding: 0 15px; 
+
 }
+
+.raise {
+    animation: raise 1s forwards;
+}
+
+@keyframes raise {
+    from{
+    
+    }
+    to{
+        box-shadow: 0 1px 5px rgba(0,0,0,.46);
+        background: var(--purple);
+        color: white;
+    }
+}
+
 
 @media screen and (min-width: 1000px){
 
@@ -27,8 +43,8 @@
 }
 .logo {
     text-decoration: none;
-    color: var(--purple);
     font-family: var(--main);
+    color: inherit;
     font-weight: 900;
     font-size: 2.5rem;
 }
