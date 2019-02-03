@@ -1,0 +1,32 @@
+.Header {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+
+    display: flex;
+
+}
+.Header-split {
+    width: 50%;
+}
+.Header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Header-text * {
+    max-width: 350px;
+    color: var(--purple);
+}
+.Header-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Header-image img::selection {
+    background: none;
+}
+.Header-image img {
+    height: 90%;
+    width: 90%;
+}

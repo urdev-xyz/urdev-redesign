@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar'
-import hero from './hero.svg';
+import Header from './components/Header/Header'
 import './App.css';
 
 class App extends Component {
@@ -8,6 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar/>
+        <div className="Content">
+          <Header/>
+        </div>
       </div>
     );
   }
