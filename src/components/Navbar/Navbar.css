@@ -17,7 +17,7 @@
 }
 
 .raise {
-    animation: raise 1s forwards;
+    animation: raise .8s forwards;
 }
 
 @keyframes raise {

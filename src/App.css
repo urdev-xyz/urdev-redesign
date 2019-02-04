@@ -9,15 +9,18 @@
 
 .big-circle-bg {
   display: none;
-  position: absolute;
+  position: fixed;
   top: -25%;
   left: -25%;
+  height: 750px;
+  width: 750px;
   z-index: 0;
   background: #DBE8F7;
   border-radius: 100%; 
 }
 .small-circle-bg {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: -10%;
   left: 90%;
   z-index: 0;
@@ -43,7 +46,7 @@
   left: 0;
   padding-top: 60px;
   width: 100%;
-  height: 100%;
+  height: 3000px;
 }
 @media screen and (min-width: 1000px){
 
@@ -55,7 +58,9 @@
   }
   .big-circle-bg {
     display: block;
-    height: 750px;
-    width: 750px;
   }
+  .small-circle-bg {
+    display: block;
+  }
+
 }
