@@ -9,6 +9,7 @@ class App extends Component {
       <div className="App">
         <Navbar/>
         <div className='big-circle-bg'></div>
+        <div className='small-circle-bg'></div>
         <div className="Content">
           <Header/>
         </div>

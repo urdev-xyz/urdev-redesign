@@ -7,6 +7,27 @@
   --pink: #D05EA3;
 }
 
+.big-circle-bg {
+  display: none;
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  z-index: 0;
+  background: #DBE8F7;
+  border-radius: 100%; 
+}
+.small-circle-bg {
+  position: absolute;
+  top: -10%;
+  left: 90%;
+  z-index: 0;
+
+  width: 250px;
+  height: 250px;
+  background: #DBE8F7;
+  border-radius: 100%; 
+}
+
 .App {
   font-family: var(--main);
   background: var(--purple);
@@ -17,6 +38,7 @@
 .Content {
   background: rgba(0, 0, 0, 0);
   position: absolute;
+  z-index: 5;
   top: 0;
   left: 0;
   padding-top: 60px;
@@ -30,5 +52,10 @@
       left: 50%;
       transform: translateX(-50%);
       max-width: 1000px;
+  }
+  .big-circle-bg {
+    display: block;
+    height: 750px;
+    width: 750px;
   }
 }
