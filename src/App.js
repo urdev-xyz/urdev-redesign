@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar'
 import Header from './components/Header/Header'
 import './App.css';
+import './misc.css'
 
 class App extends Component {
   render() {
@@ -12,6 +13,9 @@ class App extends Component {
         <div className='small-circle-bg'></div>
         <div className="Content">
           <Header/>
+          <div className="join-newsletter">
+
+          </div>
         </div>
       </div>
     );
