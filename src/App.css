@@ -4,12 +4,18 @@
   --main: 'Nunito', sans-serif;
 
   --purple: #42489E;
+  --pink: #D05EA3;
 }
 
 .App {
   font-family: var(--main);
+  background: var(--purple);
+
+  width: 100%;
+  height: 100%;
 }
 .Content {
+  background: rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;
   left: 0;
