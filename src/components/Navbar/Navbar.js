@@ -53,12 +53,14 @@ class Navbar extends Component {
             <div className='mobile'>
               <Hamburger
               active={this.state.active}
-              type="slider"
+              type="squeeze"
               onClick={() => this.setState({ active: !this.state.active })}
               />
-              <ul className='navbar-links'>
-                {this.generatePageLinks(this.props.pages)}
-              </ul>
+              <div className={`slideout ${ this.state.active ? 'slideout-active' : null}`}>
+                <ul className='navbar-links'>
+                  {this.generatePageLinks(this.props.pages)}
+                </ul>
+              </div>
             </div>
         </div>
       </div>
