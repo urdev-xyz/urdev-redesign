@@ -82,7 +82,7 @@
     }
     .Header-image {
         align-items: center;
-        min-height: 200px
+        min-height: 200px;
     }
     .Header-image img {
         max-width: 200px;

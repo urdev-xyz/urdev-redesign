@@ -11,6 +11,8 @@ class Navbar extends Component {
     }
   }
 
+
+
   componentDidMount(){
     window.addEventListener('scroll', (event) => {
       let myclass;
@@ -24,11 +26,26 @@ class Navbar extends Component {
        })
     });
   }
+
+  generatePageLinks(pageNames) {
+    let listItems = pageNames.map((pageNames) =>
+      <li>{pageNames.name}</li>
+    );
+    return (
+      listItems
+    )
+  }
+
   render() {
     return (
       <div className={`Navbar ${ this.state.scrollState}`}>
         <div className={"Navbar-inner"}>
             <a className={'logo'} href='/#'>urdev</a>
+
+            <ul className='navbar-links'>
+              {this.generatePageLinks(this.props.pages)}
+            </ul>
+
         </div>
       </div>
     );

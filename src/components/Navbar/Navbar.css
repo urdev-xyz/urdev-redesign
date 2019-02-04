@@ -14,6 +14,9 @@
     height: 100%;
     padding: 0 15px; 
 
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .raise {
@@ -51,4 +54,12 @@
 }
 .logo:hover {
     color: var(--pink);
+}
+
+.navbar-links {
+    list-style: none;
+}
+.navbar-links li{
+    float: left;
+    margin: 5px 15px 0px 15px;
 }

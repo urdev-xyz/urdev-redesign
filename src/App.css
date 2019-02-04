@@ -14,11 +14,10 @@
   position: fixed;
   top: -25%;
   left: -25%;
-  height: 750px;
-  width: 750px;
   z-index: 0;
   background: #DBE8F7;
   border-radius: 100%; 
+  animation: growBig 2s forwards;
 }
 .small-circle-bg {
   display: none;
@@ -26,11 +25,19 @@
   top: -10%;
   left: 90%;
   z-index: 0;
-
-  width: 250px;
-  height: 250px;
-  background: #DBE8F7;
+  background: var(--pink);
   border-radius: 100%; 
+  animation: growSmall 2s forwards;
+}
+.small-circle-bg-two {
+  display: none;
+  position: fixed;
+  bottom: -25%;
+  left: 70%;
+  z-index: 0;
+  background: var(--yellow);
+  border-radius: 100%; 
+  animation: growSmall 2s forwards;
 }
 
 .App {
@@ -48,7 +55,7 @@
   left: 0;
   padding-top: 60px;
   width: 100%;
-  height: auto;
+  height: 2000px;
 }
 @media screen and (min-width: 1000px){
 
@@ -64,5 +71,30 @@
   .small-circle-bg {
     display: block;
   }
+  .small-circle-bg-two {
+    display: block;
 
+  }
+
+}
+
+@keyframes growBig {
+  from {
+    height: 100px;
+    width: 100px;
+  }
+  to {
+    height: 750px;
+    width: 750px;
+  }
+}
+@keyframes growSmall {
+  from {
+    height: 50px;
+    width: 50px;
+  }
+  to {
+    height: 250px;
+    width: 250px;
+  }
 }

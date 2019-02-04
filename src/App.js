@@ -5,17 +5,31 @@ import './App.css';
 import './misc.css'
 
 class App extends Component {
+  constructor(props){
+     super(props);
+     
+     this.state = {
+       pages: [
+         {name: 'Home'},
+         {name: 'Services'},
+         {name: 'Products'},
+         {name: 'About'},
+         {name: 'Contact'}
+       ],
+     }
+
+  }
+
+
   render() {
     return (
       <div className="App">
-        <Navbar/>
+        <Navbar pages={this.state.pages}/>
         <div className='big-circle-bg'></div>
         <div className='small-circle-bg'></div>
+        <div className='small-circle-bg-two'></div>
         <div className="Content">
           <Header/>
-          <div className="join-newsletter">
-
-          </div>
         </div>
       </div>
     );
