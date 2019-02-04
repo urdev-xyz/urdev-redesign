@@ -53,7 +53,7 @@ class Navbar extends Component {
             <div className='mobile'>
               <Hamburger
               active={this.state.active}
-              type="squeeze"
+              type="vortex"
               onClick={() => this.setState({ active: !this.state.active })}
               />
               <div className={`slideout ${ this.state.active ? 'slideout-active' : null}`}>

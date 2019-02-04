@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar'
 import Header from './components/Header/Header'
 import './App.css';
 import './misc.css'
+import Services from './components/Services/Services';
 
 class App extends Component {
   constructor(props){
@@ -30,6 +31,7 @@ class App extends Component {
         <div className='small-circle-bg-two'></div>
         <div className="Content">
           <Header/>
+          <Services/>
         </div>
       </div>
     );
