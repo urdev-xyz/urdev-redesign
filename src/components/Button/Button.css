@@ -33,7 +33,6 @@
 }
 
 .Button {
-    background: var(--purple);
     border-radius: 50px;
     color: white !important;
     font-weight: 900;
@@ -46,10 +45,7 @@
 }
 
 @keyframes hovered {
-    from{
-        
-    }
     to{
-        
+        background: var(--pink);
     }
 }
