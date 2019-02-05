@@ -7,14 +7,21 @@ class Header extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      headerHeight: 'auto',
+    }
 
   }
   
-  
+  componentDidMount() {
+    this.setState(
+      {headerHeight: window.innerHeight}
+    )
+  }
 
   render() {
     return (
-      <div className="Header">
+      <div style={{height: this.state.headerHeight - 60}} className="Header">
         <div className={'Header-split Header-text'}>
             <h1>Development Made Simple.</h1>
             <p>At urdev we use a combination of the latest technologies and development practices to deliver fast, easy-to-use, and scalable applications.</p>
