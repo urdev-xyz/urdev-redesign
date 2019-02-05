@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import './App.css';
 import './misc.css'
 import Services from './components/Services/Services';
+import Products from './components/Products/Products'
 
 class App extends Component {
   constructor(props){
@@ -33,6 +34,7 @@ class App extends Component {
         <div className="Content">
           <Header/>
           <Services/>
+          <Products/>
         </div>
       </div>
     );

@@ -10,6 +10,10 @@
   --light-blue: #DBE8F7;
 }
 
+section {
+  padding: 50px 0;
+}
+
 .big-circle-bg {
   display: none;
   position: fixed;
