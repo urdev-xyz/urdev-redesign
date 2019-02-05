@@ -7,24 +7,25 @@
 }
 .Services-card {
     width: 300px;
-    min-width: 300px;
-    height: 400px;
+    max-height: 300px;
+    padding: 30px 0;
     background: white;
     border-radius: .5rem; 
     box-shadow: 0 1px 5px rgba(0,0,0,.46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 3px solid;
+    border-color: var(--off-purple);
 
 }
-.Services-card-header {
-    width: 100%;
-    height: 60px;
-    text-align: center;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 900;
+.Services-card-image {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 50%;
+    padding: 5px;
+    background: var(--yellow);
 }
 
 @media screen and (max-width: 900px) {
@@ -34,7 +35,9 @@
         align-items: center;
     }
     .Services-card {
-        width: 90%;
+        width: 80%;
         margin: 20px;
+        flex-direction: row;
+        padding: 30px 30px;
     }
 }

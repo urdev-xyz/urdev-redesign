@@ -1,5 +1,7 @@
 import React from 'react';
 import './Services.css';
+import appdev from '../../appdev.svg';
+
 
 
 
@@ -12,18 +14,18 @@ class Services extends React.Component {
         return (
             <div className={'Services'}>
                 <div className={'Services-card'}>
-                    <div style={{background: 'var(--purple)'}} className='Services-card-header'>
-                        App Dev
+                    <div className='Services-card-image'>
+                        <img src={ appdev }/>
                     </div>
                 </div>
                 <div className={'Services-card'}>
-                    <div style={{background: 'var(--yellow)'}} className='Services-card-header'>
-                        Web Dev
+                <div className='Services-card-image'>
+                        <img src={ appdev }/>
                     </div>
                 </div>
                 <div className={'Services-card'}>
-                    <div style={{background: 'var(--pink)'}} className='Services-card-header'>
-                        Email Dev
+                <div className='Services-card-image'>
+                        <img src={ appdev }/>
                     </div>
                 </div>
             </div>
