@@ -45,7 +45,7 @@ section h1 {
     font-weight: 900;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .Services {
         flex-direction: column;
         justify-content: center;
