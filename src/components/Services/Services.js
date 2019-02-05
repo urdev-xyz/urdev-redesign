@@ -2,6 +2,8 @@ import React from 'react';
 import './Services.css';
 import appdev from '../../appdev.svg';
 import webdev from '../../webdev.svg';
+import seo from '../../seo.svg';
+
 
 
 
@@ -38,7 +40,7 @@ class Services extends React.Component {
                 </div>
                 <div className={'Services-card'}>
                     <div style={{background: 'var(--light-blue)'}} className='Services-card-image'>
-                        <img src={ appdev }/>
+                        <img src={ seo }/>
                     </div>
                     <div className='Service-card-content'>
                         <h1>SEO</h1>

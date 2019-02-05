@@ -33,8 +33,8 @@
 .small-circle-bg-two {
   display: none;
   position: fixed;
-  bottom: -25%;
-  left: 75%;
+  top: 90%;
+  right: 25%;
   z-index: 0;
   background: var(--yellow);
   border-radius: 100%; 
