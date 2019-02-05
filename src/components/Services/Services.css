@@ -24,8 +24,9 @@
     width: 80%;
     max-width: 200px;
     border-radius: 50%;
-    padding: 5px;
-    background: var(--yellow);
+}
+.Services-card-image img {
+    margin: 15px;
 }
 .Service-card-content {
     width: 80%;

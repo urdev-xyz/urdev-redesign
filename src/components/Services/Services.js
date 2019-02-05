@@ -1,6 +1,8 @@
 import React from 'react';
 import './Services.css';
 import appdev from '../../appdev.svg';
+import webdev from '../../webdev.svg';
+
 
 
 
@@ -14,8 +16,8 @@ class Services extends React.Component {
         return (
             <div className={'Services'}>
                 <div className={'Services-card'}>
-                    <div className='Services-card-image'>
-                        <img src={ appdev }/>
+                    <div style={{background: 'var(--pink)'}} className='Services-card-image'>
+                        <img src={ webdev }/>
                     </div>
                     <div className='Service-card-content'>
                         <h1>Web Dev</h1>
@@ -23,7 +25,7 @@ class Services extends React.Component {
                     </div>
                 </div>
                 <div className={'Services-card'}>
-                    <div className='Services-card-image'>
+                    <div style={{background: 'var(--yellow)'}} className='Services-card-image'>
                         <img src={ appdev }/>
                     </div>
                     <div className='Service-card-content'>
@@ -33,7 +35,7 @@ class Services extends React.Component {
                     </div>
                 </div>
                 <div className={'Services-card'}>
-                    <div className='Services-card-image'>
+                    <div style={{background: 'var(--light-blue)'}} className='Services-card-image'>
                         <img src={ appdev }/>
                     </div>
                     <div className='Service-card-content'>
