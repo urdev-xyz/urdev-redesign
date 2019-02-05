@@ -14,6 +14,8 @@ class Services extends React.Component {
 
     render() {
         return (
+            <section>
+                <h1>Our Services</h1>
             <div className={'Services'}>
                 <div className={'Services-card'}>
                     <div style={{background: 'var(--pink)'}} className='Services-card-image'>
@@ -45,6 +47,7 @@ class Services extends React.Component {
                     </div>
                 </div>
             </div>
+            </section>
         );
     }
 }
