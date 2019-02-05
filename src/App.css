@@ -7,6 +7,7 @@
   --pink: #D05EA3;
   --off-purple: #5470B6;
   --yellow: #FFCF45;
+  --light-blue: #DBE8F7;
 }
 
 .big-circle-bg {
@@ -15,7 +16,7 @@
   top: -25%;
   left: -25%;
   z-index: 0;
-  background: #DBE8F7;
+  background: var(--light-blue);
   border-radius: 100%; 
   animation: growBig 2s forwards;
 }
@@ -64,7 +65,6 @@
       left: 50%;
       transform: translateX(-50%);
       max-width: 1000px;
-      overflow: hidden;
   }
   .big-circle-bg {
     display: block;

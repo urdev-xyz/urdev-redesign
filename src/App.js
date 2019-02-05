@@ -29,6 +29,7 @@ class App extends Component {
         <div className='big-circle-bg'></div>
         <div className='small-circle-bg'></div>
         <div className='small-circle-bg-two'></div>
+        <div className='background-el'></div>
         <div className="Content">
           <Header/>
           <Services/>
