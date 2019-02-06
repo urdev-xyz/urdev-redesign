@@ -9,6 +9,10 @@
 
     text-align: left;
 }
+.Navbar *::selection {
+    background: none;
+    color: inherit;
+}
 .Navbar-inner {
     width: 100%;
     height: 100%;

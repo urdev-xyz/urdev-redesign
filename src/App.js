@@ -4,7 +4,8 @@ import Header from './components/Header/Header'
 import './App.css';
 import './misc.css'
 import Services from './components/Services/Services';
-import Products from './components/Products/Products'
+import Products from './components/Products/Products';
+import Contact from './components/Contact/Contact';
 
 class App extends Component {
   constructor(props){
@@ -35,6 +36,7 @@ class App extends Component {
           <Header/>
           <Services/>
           <Products/>
+          <Contact></Contact>
         </div>
       </div>
     );
