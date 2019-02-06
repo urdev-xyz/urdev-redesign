@@ -44,6 +44,9 @@ section h1 {
     text-align: center;   
     font-weight: 900;
 }
+.Service-card-content p {
+    margin-bottom: 40px !important;
+}
 
 @media screen and (max-width: 1000px) {
     .Services {
@@ -53,7 +56,7 @@ section h1 {
     }
     .Services-card {
         width: 90%;
-        margin: 20px;
+        margin: 33px;
         flex-direction: row;
         text-align: left;
 
