@@ -38,6 +38,7 @@
     font-weight: 900;
     padding: 15px 10px;
     width: 50%;
+    min-width: 200px;
     cursor: pointer;
 }
 .Button:hover {
