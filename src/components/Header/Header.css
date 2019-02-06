@@ -61,7 +61,6 @@
     .Header {
         flex-direction: column-reverse;
         justify-content: flex-end;
-        padding-top: 50px;    
     }
     .Header-split {
         width: auto;
@@ -88,6 +87,7 @@
     .Header-image {
         align-items: center;
         min-height: 200px;
+        padding-bottom: 30px;
     }
     .Header-image img {
         max-width: 200px;
@@ -106,7 +106,7 @@
 }
 .arrow-container svg {
     fill: var(--purple);
-    animation: bounce 1.5s 2;
+    animation: bounce 1.5s infinite;
 
 }
 
@@ -115,11 +115,24 @@
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(10px);
+        transform: translateY(-10px);
 
     }
     100% {
         transform: translateY(0px);
 
+    }
+}
+
+.fadeout {
+    animation: fadeout .5s forwards;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
