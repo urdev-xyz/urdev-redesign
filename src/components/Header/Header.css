@@ -91,6 +91,7 @@
     }
     .Header-image img {
         max-width: 200px;
+        margin-bottom: 60px; 
     }
     .arrow-container {
         visibility: hidden;
