@@ -6,6 +6,7 @@ import './misc.css'
 import Services from './components/Services/Services';
 import Products from './components/Products/Products';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   constructor(props){
@@ -26,6 +27,7 @@ class App extends Component {
 
   render() {
     return (
+      <div className='outer'>
       <div className="App">
         <Navbar pages={this.state.pages}/>
         <div className='big-circle-bg'></div>
@@ -37,7 +39,9 @@ class App extends Component {
           <Services/>
           <Products/>
           <Contact></Contact>
+          <Footer pages={this.state.pages}/>
         </div>
+      </div>
       </div>
     );
   }

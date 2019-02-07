@@ -17,7 +17,7 @@ class Products extends React.Component {
                         <p>Learn what's hot in web development in 2019 and how to apply modern practices to inhance you're carreer</p>
                     </div>
                     <div className='Products-card'>
-                        <h1>Wordpress Themes</h1>
+                        <h1>Shopify Themes</h1>
                         <p>Learn what's hot in web development in 2019 and how to apply modern practices to inhance you're carreer</p>
                     </div>
                 </div>

@@ -19,6 +19,14 @@
   color: white;
 }
 
+.outer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 section {
   padding: 50px 0 0 0;
 }
@@ -56,14 +64,14 @@ section {
 
 .App {
   font-family: var(--main);
-  background: var(--purple);
+  background: white;
 
   width: 100%;
   height: 100%;
 }
 .Content {
   background: rgba(0, 0, 0, 0);
-  position: absolute;
+  position: relative;
   z-index: 5;
   top: 0;
   left: 0;
@@ -74,10 +82,13 @@ section {
 @media screen and (min-width: 1000px){
 
   .Content {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+  }
+  .Content *{
+    max-width: 1000px;
   }
   .big-circle-bg {
     display: block;
