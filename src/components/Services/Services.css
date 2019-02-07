@@ -8,23 +8,23 @@ section h1 {
 .Services {
     width: 100%;
     height: auto;
-    
+    padding: 15px 0;
     display: flex;
     justify-content: space-evenly;
+    border: 3px solid;
+    border-color: var(--purple);
+    background: white;
+    border-radius: .5rem; 
+    box-shadow: 0 1px 5px rgba(0,0,0,.46);
 }
 .Services-card {
     width: 300px;
     text-align: center;
     padding: 30px 0;
-    background: white;
-    border-radius: .5rem; 
-    box-shadow: 0 1px 5px rgba(0,0,0,.46);
     display: flex;
     flex-direction: column;
     align-items: center;
     
-    border: 3px solid;
-    border-color: var(--purple);
 
 }
 .Services-card-image {
@@ -41,10 +41,12 @@ section h1 {
 
 }
 .Service-card-content h1 {
-    text-align: center;   
+    text-align: center;
+    font-size: 1.5rem;   
     font-weight: 900;
 }
 .Service-card-content p {
+    font-size: .8rem;
     margin-bottom: 40px !important;
 }
 
@@ -53,10 +55,11 @@ section h1 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 2%;
+        width: auto;
     }
     .Services-card {
         width: 90%;
-        margin: 33px;
         flex-direction: row;
         text-align: left;
 

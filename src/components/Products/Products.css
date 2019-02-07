@@ -6,9 +6,10 @@
     text-align: center;
 }
 .Products-card {
-    width: 100%;
+    width: 90;
     max-width: 250px;
     padding: 25px;
+    margin: 10px;
     margin-bottom: 20px; 
     background: white;
     border-radius: .5rem;
@@ -17,10 +18,10 @@
 
 }
 .Products-card h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .Products-card p {
-
+    font-size: .8rem;
 }
 
 @media screen and (max-width: 950px) {

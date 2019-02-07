@@ -1,6 +1,57 @@
-.Footer {
-    background: var(--purple);
+.Footer-outer {
+    max-width: 100% ;
     width: 100%;
-    min-height: 400px;
-    max-width: 100% !important;
+    background: var(--purple);
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Footer-outer span {
+    margin: 25px 0 0 0;
+    font-size: .8rem;
+    color: #222;
+}
+.Footer-outer span::selection {
+    background: none;
+    color: #222;
+}
+.Footer {
+    width: 100%;
+    max-width: 100% ;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    color: white;
+
+}
+.Footer-Section {
+    min-width: 200px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.Footer li, a {
+    color: white;
+    text-decoration: none;
+    text-align: center
+}
+.Footer li:hover {
+    color: var(--yellow);
+    font-size: 1.07rem;
+}
+
+@media screen and (max-width: 900px) {
+    .Footer-Section {
+        align-items: center;
+    }
 }

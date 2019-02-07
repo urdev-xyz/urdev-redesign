@@ -42,11 +42,11 @@ class Services extends React.Component {
                     </div>
                 </div>
                 <div className={'Services-card'}>
-                <h1>SEO</h1>
                     <div style={{background: 'var(--light-blue)'}} className='Services-card-image'>
                         <img src={ seo }/>
                     </div>
                     <div className='Service-card-content'>
+                        <h1>SEO</h1>
                         <p>At urdev we use a combination of the latest technologies and development practices to deliver fast, easy-to-use, and scalable applications.</p>
                         <Button>Get Started</Button>
 
