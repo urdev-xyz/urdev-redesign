@@ -2,14 +2,24 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 200px;
     padding: 0 0px;
+}
+.Contact h1 {
+    margin: 20px 0 0 0;
+}
+.Contact p {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 20%;
+    color: var(--purple);
 }
 .Contact-inner {
     width: 85%;
     min-height: 300px;
     background: white;
-    border: 3px solid var(--purple);
+    border: 4px solid var(--purple);
     box-shadow: 0 1px 5px rgba(0,0,0,.46);
     border-radius: .5rem; 
     padding: 15px;
@@ -33,7 +43,7 @@
     width: 45% !important;
 }
 .form-top input:focus {
-    animation: selectForm .2s forwards;
+    animation: selectForm .4s forwards;
 }
 .Contact-inner input {
     width: 95%;
@@ -47,6 +57,21 @@
     border-bottom: 2px solid #3e3e3e;
     background:none;
 
+}
+
+.Contact textarea {
+    width: 90%;
+    height: 100%;
+    min-height: 200px;
+    margin: 50px 0;
+    padding: 15px;
+    border: 2px solid #3e3e3e;
+    font-family: var(--main);
+    font-weight: 500;
+    outline: none;
+}
+.Contact textarea:focus {
+    border: 2px solid var(--purple);
 }
 
 @keyframes selectForm {
@@ -65,5 +90,12 @@
     }
     .form-top input {
         width: 90% !important;
+    }
+    .Contact textarea {
+        padding: 10px 10px;
+        width: 82%;
+    }
+    .Contact p {
+        padding: 0 5%;
     }
 }
