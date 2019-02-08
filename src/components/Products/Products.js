@@ -5,7 +5,7 @@ class Products extends React.Component {
 
     render() {
         return (
-            <section>
+            <section id={'Products'}>
                 <h1>Products</h1>
                 <div className='Products'>
                     <div className='Products-card'>

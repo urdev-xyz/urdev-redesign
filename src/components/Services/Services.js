@@ -18,7 +18,7 @@ class Services extends React.Component {
 
     render() {
         return (
-            <section>
+            <section id={'Services'}>
                 <h1>Our Services</h1>
             <div className={'Services'}>
                 <div className={'Services-card'}>

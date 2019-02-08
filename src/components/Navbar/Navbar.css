@@ -75,6 +75,7 @@
 .navbar-links {
     list-style: none;
     margin-right: 15px;
+    cursor: pointer;
 }
 .navbar-links a {
     color: inherit;

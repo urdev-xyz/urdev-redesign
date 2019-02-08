@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './Navbar.css';
 import Hamburger from 'react-hamburgers';
 import './Hamburgers.css'
+import { ScrollTo } from 'react-scroll-to';
+import Contact from '../Contact/Contact';
 
 
 class Navbar extends Component {
@@ -32,8 +34,27 @@ class Navbar extends Component {
   }
 
   generatePageLinks(pageNames) {
-    let listItems = pageNames.map((pageNames) =>
-      <a href='/#'><li>{pageNames.name}</li></a>
+    let getPageY = function(name) {
+        if (name != 'Home') {
+          let item = document.querySelector('#' + name);
+
+          let rect = item.getBoundingClientRect();
+  
+          console.log(Math.abs(rect.top) + window.pageYOffset)
+  
+          return rect.top + window.pageYOffset;
+        }
+        else {
+          return 0;
+        }
+
+    }
+    let listItems = pageNames.map((pageNames, pageY) =>
+      <ScrollTo>
+        {({ scrollTo }) => (
+          <a onClick={() => scrollTo({y: getPageY(pageNames.name), smooth: true })}><li>{pageNames.name}</li></a>
+        )}
+      </ScrollTo>
     );
     return (
       listItems
@@ -42,12 +63,12 @@ class Navbar extends Component {
 
   render() {
     return (
-      <div className={`Navbar ${ this.state.scrollState}`}>
+      <div id={'Home'} className={`Navbar ${ this.state.scrollState}`}>
         <div className={"Navbar-inner"}>
             <a className={'logo'} href='/#'>urdev</a>
 
             <ul className='desktop navbar-links'>
-              {this.generatePageLinks(this.props.pages)}
+              {this.generatePageLinks(this.props.pages, this.props.pagesY)}
             </ul>
             
             <div className='mobile'>

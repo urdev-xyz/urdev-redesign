@@ -14,11 +14,11 @@ class App extends Component {
      
      this.state = {
        pages: [
-         {name: 'Home'},
-         {name: 'Services'},
-         {name: 'Products'},
-         {name: 'About'},
-         {name: 'Contact'}
+         {name: 'Home', pageY: 0, mobilePageY: 0},
+         {name: 'Services', pageY: 775, mobilePageY: 0},
+         {name: 'Products' ,pageY: 1400, mobilePageY: 1700} ,
+         {name: 'About' ,pageY: 0, mobilePageY: 0},
+         {name: 'Contact' ,pageY: 1920, mobilePageY: 2600}
        ],
      }
 

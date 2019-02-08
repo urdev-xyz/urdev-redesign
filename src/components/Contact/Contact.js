@@ -9,7 +9,7 @@ class Contact extends React.Component {
 
     render(){
         return (
-            <section>
+            <section id={'Contact'}>
                 <div className="Contact">
                     <div className="Contact-inner">
                         <h1>Contact Us</h1>
