@@ -10,11 +10,11 @@
 .Footer-outer span {
     margin: 25px 0 0 0;
     font-size: .8rem;
-    color: #aaa;
+    color: #fff;
 }
 .Footer-outer span::selection {
     background: none;
-    color: #eee;
+    color: #fff;
 }
 .Footer {
     width: 100%;
